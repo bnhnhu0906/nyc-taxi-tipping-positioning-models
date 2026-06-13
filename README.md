@@ -27,15 +27,6 @@ All models use cluster-robust standard errors at the pickup-zone level. Variable
 - **Drop-off location dominates wait time**: an outer-borough drop-off cuts the chance of a quick next pickup by ~80% (waits ~5x longer); a Queens drop-off means ~73% longer waits.
 - **Cross-challenge synthesis** reveals no zone is uniformly best — airports (JFK, LaGuardia) top morning-success scores but rank lowest on tipping and pickup speed, while residential Upper Manhattan zones (Upper West Side North/South, Yorkville West) offer the best overall balance of tipping, efficiency, and flexibility.
 
-## Repository Structure
-├── notebook/    # Full analysis: cleaning, EDA, modelling, robustness checks
-
-├── report/      # Final written report (PDF)
-
-├── figures/     # Key visualisations (tip patterns, zone rankings, survival curves)
-
-└── requirements.txt
-
 ## Data
 
 Source: [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page), enriched with TLC taxi zone demographics and hourly weather data. Raw data is not included in this repository due to size; see the notebook for loading instructions.
